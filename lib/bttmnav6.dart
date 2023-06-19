@@ -241,189 +241,191 @@ class _Bttmnav6State extends State<Bttmnav6> {
         ],
         leading: Icon(Icons.mail_outline_rounded),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(left: 20.0, top: 10),
-            child: Text(
-              "let's help each otners",
-              style: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w500,
-                  fontSize: 18),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, top: 10),
-            child: Text(
-              "Hi john",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25),
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Center(
-            child: Container(
-              width: 350,
-              height: 120,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  gradient: LinearGradient(
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                    colors: [
-                      Color.fromARGB(230, 12, 193, 224),
-                      Color.fromARGB(230, 12, 193, 200),
-                      Color.fromARGB(230, 12, 193, 180),
-                    ],
-                  )),
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(25.0),
-                    child: Text(
-                      "Start New\nFundraising",
-                      style: TextStyle(fontSize: 23, color: Colors.white),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Container(
-                      height: 52,
-                      width: 140,
-                      decoration: BoxDecoration(
-                          color: Colors.white70,
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Center(
-                          child: Text(
-                        "Start Now",
-                        style: TextStyle(fontSize: 19),
-                      )),
-                    ),
-                  ),
-                ],
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0, top: 10),
+              child: Text(
+                "let's help each otners",
+                style: TextStyle(
+                    color: Colors.black38,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, top: 10),
-            child: Text(
-              "Categories",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.only(left: 20, top: 10),
+              child: Text(
+                "Hi john",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25),
+              ),
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              GestureDetector(
-                onTap: () {},
-                child: Container(
-                  child: Column(
-                    children: [
-                      Icon(
-                        Icons.favorite_border_outlined,
-                        color: Color.fromARGB(230, 12, 193, 224),
-                        size: 45,
-                      ),
-                      Text("Donate")
-                    ],
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () {},
-                child: Container(
-                  child: Column(
-                    children: [
-                      Icon(
-                        Icons.computer,
-                        color: Color.fromARGB(230, 12, 193, 224),
-                        size: 45,
-                      ),
-                      Text("Online\nClass")
-                    ],
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () {},
-                child: Container(
-                  child: Column(
-                    children: [
-                      Icon(
-                        Icons.shopping_cart_outlined,
-                        color: Color.fromARGB(230, 12, 193, 224),
-                        size: 45,
-                      ),
-                      Text("Shopping")
-                    ],
-                  ),
-                ),
-              ),
-              GestureDetector(
-                onTap: () {},
-                child: Container(
-                  child: Column(
-                    children: [
-                      Icon(
-                        Icons.menu_open_outlined,
-                        color: Color.fromARGB(230, 12, 193, 224),
-                        size: 45,
-                      ),
-                      Text("Others")
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Container(
-              child: Column(
-                children: [
-                  Container(
-                    width: double.infinity,
-                    height: 80,
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(230, 12, 193, 224),
-                        borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(30),
-                            topLeft: Radius.circular(30))),
-                    child: Center(
+            SizedBox(
+              height: 10,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                height: 120,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    gradient: LinearGradient(
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                      colors: [
+                        Color.fromARGB(230, 12, 193, 224),
+                        Color.fromARGB(230, 12, 193, 200),
+                        Color.fromARGB(230, 12, 193, 180),
+                      ],
+                    )),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(25.0),
                       child: Text(
-                        "We rise by lifting others",
-                        style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
+                        "Start New\nFundraising",
+                        style: TextStyle(fontSize: 23, color: Colors.white),
                       ),
                     ),
-                  ),
-                  Container(
-                    width: double.infinity,
-                    height: 200,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/images/child.jpg"),
-                            fit: BoxFit.cover),
-                        borderRadius: BorderRadius.only(
-                            bottomRight: Radius.circular(30),
-                            bottomLeft: Radius.circular(30))),
-                  ),
-                ],
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        height: 52,
+                        width: 140,
+                        decoration: BoxDecoration(
+                            color: Colors.white70,
+                            borderRadius: BorderRadius.circular(15)),
+                        child: Center(
+                            child: Text(
+                          "Start Now",
+                          style: TextStyle(fontSize: 19),
+                        )),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.only(left: 20, top: 10),
+              child: Text(
+                "Categories",
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.favorite_border_outlined,
+                          color: Color.fromARGB(230, 12, 193, 224),
+                          size: 45,
+                        ),
+                        Text("Donate")
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.computer,
+                          color: Color.fromARGB(230, 12, 193, 224),
+                          size: 45,
+                        ),
+                        Text("Online\nClass")
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.shopping_cart_outlined,
+                          color: Color.fromARGB(230, 12, 193, 224),
+                          size: 45,
+                        ),
+                        Text("Shopping")
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.menu_open_outlined,
+                          color: Color.fromARGB(230, 12, 193, 224),
+                          size: 45,
+                        ),
+                        Text("Others")
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
+                child: Column(
+                  children: [
+                    Container(
+                      width: double.infinity,
+                      height: 80,
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(230, 12, 193, 224),
+                          borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(30),
+                              topLeft: Radius.circular(30))),
+                      child: Center(
+                        child: Text(
+                          "We rise by lifting others",
+                          style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: double.infinity,
+                      height: 200,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/images/child.jpg"),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(30),
+                              bottomLeft: Radius.circular(30))),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
